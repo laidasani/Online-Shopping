@@ -2,20 +2,71 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.lka</groupId>
-  <artifactId>onlineshopping-FrontEnd</artifactId>
+  <artifactId>onlineshoppingFrontEnd</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>onlineshopping-FrontEnd Maven Webapp</name>
+  <name>onlineshoppingFrontEnd Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+   	
+  	<properties>
+  		<javaee.version>8.0.1</javaee.version>
+  		<spring.version>5.1.9.RELEASE</spring.version>
+  	</properties>
   <dependencies>
+  	
+  	<!-- JAVE EE API -->
+	<dependency>
+		<groupId>javax</groupId>
+		<artifactId>javaee-api</artifactId>
+		<version>${javaee.version}</version>
+		<scope>provided</scope>
+	</dependency>
+  	
+  
+  	<!-- J-Unit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- Spring -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	
+	 <!-- JSTL -->
+	<dependency>
+		<groupId>jstl</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+    
+    
+    
   </dependencies>
+  
+  
+  
   <build>
+  	
+  	<plugins>
+  	<!-- Update to lastest version of Java -->
+  		 <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+        	<source>1.8</source>
+        	<target>1.8</target>
+        </configuration>
+  		</plugin>
+  	</plugins>
+  
+  
     <finalName>onlineshopping-FrontEnd</finalName>
   </build>
 </project>
