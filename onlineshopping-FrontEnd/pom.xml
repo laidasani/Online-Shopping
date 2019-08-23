@@ -15,6 +15,16 @@
   	</properties>
   <dependencies>
   	
+  	<!-- Link Backend Project -->
+	<dependency>
+		<groupId>net.lka</groupId>
+		<artifactId>onlineshoppingBackEnd</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+  	
+  	
+  	
+  	
   	<!-- JAVE EE API -->
 	<dependency>
 		<groupId>javax</groupId>

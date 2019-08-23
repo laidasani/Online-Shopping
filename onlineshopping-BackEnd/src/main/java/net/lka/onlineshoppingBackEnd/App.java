@@ -1,4 +1,4 @@
-package net.lka.onlineshopping_BackEnd;
+package net.lka.onlineshoppingBackEnd;
 
 /**
  * Hello world!
