@@ -1,4 +1,4 @@
-package net.lka.onlineshopping_BackEnd;
+package net.lka.onlineshoppingBackEnd;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
