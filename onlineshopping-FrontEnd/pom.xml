@@ -12,6 +12,7 @@
   	<properties>
   		<javaee.version>8.0.1</javaee.version>
   		<spring.version>5.1.9.RELEASE</spring.version>
+  		<spring.security.version>4.2.2.RELEASE</spring.security.version>
   	</properties>
   <dependencies>
   	
@@ -68,8 +69,32 @@
 		<artifactId>jstl</artifactId>
 		<version>1.2</version>
 	</dependency>
-    
-    
+
+	<!-- Spring Webflow -->
+	<dependency>
+		<groupId>org.springframework.webflow</groupId>
+		<artifactId>spring-webflow</artifactId>
+		<version>2.4.4.RELEASE</version>
+	</dependency>
+	
+	  <!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
     
   </dependencies>
   

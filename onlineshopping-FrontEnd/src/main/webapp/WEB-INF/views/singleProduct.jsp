@@ -49,6 +49,7 @@
 				</c:otherwise>
 			</c:choose>
 			
+			<security:authorize access="hasAuthority('USER')">
 			<c:choose>
 				<c:when test="${product.quantity<1}">
 					<a href="javascript:void(0)" class="btn btn-success disabled"><strike>
@@ -61,6 +62,13 @@
 					</a>
 				</c:otherwise>
 			</c:choose>
+			</security:authorize>
+			
+			<security:authorize access="hasAuthority('ADMIN')">
+				<a href="${contextRoot}/manage/${product.id}/product" class="btn btn-warning">
+						<span class="glyphicon glyphicon-pemcil"></span>Edit
+					</a>
+			</security:authorize>
 			
 			
 			
